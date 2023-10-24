@@ -1,0 +1,22 @@
+body{
+    background-color:deepskyblue;
+}
+
+h2{
+    text-align: center;
+}
+
+#main-table{
+    width: 100%;
+}
+
+#main-table td{
+    width: 33%;
+}
+
+img{
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+    width: 80%;
+}

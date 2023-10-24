@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+    color:white;
+}
+
+h1{
+    font-family: Broadway;
+    text-align: center;
+}
+
+p{
+    display:block;
+}

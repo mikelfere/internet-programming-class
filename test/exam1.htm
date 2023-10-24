@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>exam1</title>
+        <link rel="stylesheet" href="exam1.css"/>
+        <script>let name=prompt("What's your name?");</script>
+    </head>
+    <body>
+        <div id="btm"><a href="#bottom">Go to bottom</a></div>
+        <script>document.write("<h1>" + name + "</h1>")</script>
+        <p id="para-1">This text is font Comic sans ms and color green. The title above should be the name the user typed in at the prompt and color black, header 1. The background color at the web page is ping. The text below the line is a font Century and a color red.</p>
+        <hr/>
+        <table>
+            <tr>
+                <td>
+                    <p>List of favourite icecreams</p>
+                    <ol type="i" start="2">
+                        <li>Vanilla</li>
+                        <li>Butter Peacan</li>
+                        <li>Mint Chocolate Chip</li>
+                        <li>Cookie Dough</li>
+                    </ol>
+                </td>
+                <td>
+                    <p>Click on Mr. Magoo to go to St. Rose web page</p>
+                    <a href="http://www.strose.edu"><img src="images/mrmagoo.jpg"/></a>
+                </td>
+            </tr>
+            <tr>
+                <form>
+                    <td>
+                        Enter the following data:<br/>
+                        <input type="text" id="fname" name="fname"/>
+                        <label for="fname">First Name</label><br/>
+                        <input type="text" id="lname" name="lname"/>
+                        <label for="lname">Last Name</label><br/><br/>
+                        Age under
+                        <label for="18">18</label>
+                        <input type="radio" id="18" name="age"/>
+                        <label for="21">18-21</label>
+                        <input type="radio" id="21" name="age"/>
+                        <label for="ovr21">over 21</label>
+                        <input type="radio" id="ovr21" name="age"/>
+                        <br/>
+                        <br/>
+                        <textarea>The size of this box is 
+                            width:250px;
+                            height:100px;</textarea>
+                    </td>
+                    <td>
+                        <p>Select the size of ice cream cone</p>
+                        <select id="size" name="size">
+                            <option value="a">small</option>
+                            <option value="b">medium</option>
+                            <option value="c">large</option>
+                            <option value="d">xlarge</option>
+                        </select>
+                        <input type="reset" value="clear all"/>
+                    </td>
+                </form>
+            </tr>
+        </table>
+        <br/>
+        <table>
+            <tr>
+                <td>
+                    <table id="flavours-table">
+                        <tr>
+                            <td>Chocolate</td>
+                            <td>Strawberry</td>
+                        </tr>
+                        <tr>
+                            <td>Cotton Candy</td>
+                            <td>Coffee</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <p id="date">September 27, 2023</p>
+                </td>
+            </tr>
+        </table>
+        <a name="bottom"></a>
+    </body>
+</html>

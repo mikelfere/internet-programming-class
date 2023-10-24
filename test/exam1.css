@@ -1,0 +1,56 @@
+body{
+    background-color: pink;
+    font-family: Century;
+    color: red;
+}
+
+#btm{
+    text-align: right;
+}
+
+h1{
+    color: black;
+    text-align: center;
+}
+
+#para-1{
+    color: green;
+    font-family: "Comic sans ms";
+}
+
+hr{
+    width: 50%;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+textarea{
+    width: 250px;
+    height: 100px;
+}
+
+table{
+    width: 100%;
+}
+
+table td{
+    width: 50%;
+}
+
+#flavours-table{
+    width: fit-content;
+    border: 3px solid red;
+}
+
+#flavours-table td{
+    border: 3px solid red;
+    width: fit-content;
+}
+
+#date{
+    text-align: right;
+}
+

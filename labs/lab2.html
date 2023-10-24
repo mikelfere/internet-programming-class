@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fall 2023 Lab 2</title>
+        <style>
+            body{
+                background-color: grey;
+                color: white;
+            }
+            h2{
+                text-align: center;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            .pink{
+                color: pink;
+            }
+            .main-table{
+                width: 100%;
+            }
+            .td1{
+                width: 60%;
+            }
+            .flower-table{
+                width: 100%;
+                border-width: 2px;
+                border-style: double;
+                border-color: black;
+                color: red;
+                font-family: Broadway;
+                height: 250px;
+            }
+            .flower-table-td{
+                border: 2px double black;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Mikel's Flower Shop</h2>
+        <h2>Order Form</h2>
+        <p><i>(background is gray and text is white<br/>The title above is h2 and comic sans ms)</i></p>
+        <p>ENTER THE FOLLOWING DATA:</p>
+        <form>
+            <table class="main-table">
+                <tr class="main-table-tr">
+                    <td class="td1">
+                        <table>
+                            <tr>
+                                <td>
+                                    <ol type="I" start="3">   
+                                        <li>
+                                            <label for="name">Name</label>
+                                        </li>
+                                        <li>
+                                            <label for="strt">Street</label>
+                                        <li>
+                                            <label for="city">City</label>
+                                        </li>
+                                        <li>
+                                            <label for="state">State</label>
+                                        </li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <input type="text" id="name" name="name"/><br/>
+                                    <input type="text" id="strt" name="strt"/><br/>
+                                    <input type="text" id="city" name="city"/><br/>
+                                    <input type="text" id="state" name="state"/><br/>
+                                </td>
+                            </tr>
+                        </table>
+                            <div class="pink">
+                                <input type="radio" id="grad" name="level"/>
+                                <label for="grad">Graduate</label><br/>
+                                <input type="radio" id="undg" name="level"/>
+                                <label for="undg">Undergraduate</label><br/>
+                                <textarea id="ta" name="ta" class="pink" rows="2" cols="20">This is a textarea with 2 rows and 20 columns</textarea><br/>
+                            </div>
+                            <input type="reset" id="rst" name="rst">
+                            <p><i>(The text above is pink<br/>font of Century<br/>The reset is for the whole page)</i></p>
+                    </td>
+                    <td>
+                        <img src="images/mrmagoo.jpg" width="200px" height="200px"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td1">
+                        <br/>
+                        <br/>
+                        <p><i>(The text in the table below is red and Broadway)</i></p>
+                        <p>CHECK THE FLOWERS YOU WOULD LIKE TO ORDER</p>
+                        <table class="flower-table">
+                            <tr class="flower-table-tr">
+                                <td class="flower-table-td">
+                                    <label for="tulip">Tulip</label>
+                                    <input type="checkbox" id="tulip" name="tulip"/>
+                                </td>
+                                <td class="flower-table-td">
+                                    <label for="rose">Rose</label>
+                                    <input type="checkbox" id="rose" name="rose"/>
+                                </td>
+                                <td class="flower-table-td">
+                                    <label for="dafodil">Dafodil</label>
+                                    <input type="checkbox" id="dafodil" name="dafodil"/>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="flower-table-td">
+                                    <label for="daisy">Daisy</label>
+                                    <input type="checkbox" id="daisy" name="daisy"/>
+                                </td>
+                                <td class="flower-table-td">
+                                    <label for="marieold">Marieold</label>
+                                    <input type="checkbox" id="marieold" name="marieold"/>
+                                </td>
+                                <td class="flower-table-td">
+                                    <label for="Lily">Lily</label>
+                                    <input type="checkbox" id="Lily" name="Lily"/>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                        <br/>
+                        <table>
+                            <tr>
+                                <td><input type="button" value="SUBMIT ORDER" onclick="alert('Thank you for your order!')"/></td>
+                                <td><p class="try"><i>(button should have an alert that says "Thank you for your order!")</i></p></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <p>CLICK ON THE PICTURES TO LINK TO THE WEB</p>
+                        <table>
+                            <tr>
+                                <td><a href="http://www.strose.edu"><img src="images/mrmagoo.jpg" width="150px" height="150px"/></a></td>
+                                <td>Go to Saint Rose Web page</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://www.yahoo.com"><img src="images/mrmagoo.jpg" width="150px" height="150px"/></a></td>
+                                <td>Go to Yahoo Web page</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://www.google.com"><img src="images/mrmagoo.jpg" width="150px" height="150px"/></a></td>
+                                <td>Go to Google Web page</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

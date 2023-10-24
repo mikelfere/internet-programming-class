@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Using JavaScript with Forms</title>
+        <link rel="stylesheet" href="style-lab4.css"/>
+        <script src="script-lab4.js"></script>
+    </head>
+    <body>
+        <p>The background color is #00ffe6</p>
+        <p>The text color is #b36262</p>
+        <table>
+            <tr>
+                <td>
+                    <form name="form1">
+                        <p>The text below is a header 2, font Algerian and color #00b50b</p>
+                        <h2 id="hdr-1">Find the average</h2>
+                        <label for="num1">Number 1</label>
+                        <input type="text" name="num1" id="num1" size="5"/><br/>
+                        <label for="num2">Number 2</label>
+                        <input type="text" name="num2" id="num2" size="5"/><br/>
+                        <label for="num3">Number 3</label>
+                        <input type="text" name="num3" id="num3" size="5"/><br/>
+                        <br/>
+                        <input type="button" value="Click for average" onclick="average();"/><br/>
+                        <br/>
+                        <label for="avg">Average</label>
+                        <input type="text" name="avg" id="avg" size="5"/><br/>
+                        <br/>
+                        <input type="reset" value="Clear numbers"/>
+                    </form>
+                </td>
+                <td>
+                    <form name="form2">
+                        <p>The text below is a header 2, font Chiller and color red</p>
+                        <h2 id="hdr-2">Calculate the tip</h2>
+                        <label for="bill">Bill Amount</label>
+                        <input type="text" name="bill" id="bill" size="5"/><br/>
+                        <br>
+                        <input type="button" value="Total and Tip" onclick="tipAndTotal();"><br/>
+                        <br/>
+                        <input type="text" name="tip" id="tip" size="5"/>
+                        <label for="tip">TIP</label><br/>
+                        <br/>
+                        <input type="text" name="total" id="total" size="5"/>
+                        <label for="total">TOTAL</label><br/>
+                        <br/>
+                        <input type="reset" value="Clear Bill"/>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

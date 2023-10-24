@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Order Pizza</title>
+        <link rel="stylesheet" href="homework3-style.css"/>
+        <script src="homework3-script.js"></script>
+    </head>
+    <body>
+        <h2>Mikel's Fish Restaurant</h2>
+        <form name="form1">
+            <table id="main-table">
+                <tr>
+                    <td>
+                        <label for="name">Name</label><br/>
+                        <input type="text" id="name" name="name"/><br/>
+                        <label for="addr">Address</label><br/>
+                        <input type="text" id="addr" name="addr"/><br/>
+                        <label for="phno">Phone number</label><br/>
+                        <input type="text" id="phno" name="phno"/><br/>
+                        <br/>
+                        <p>What's your age</p>
+                        <select id="age" name="age">
+                            <option value="a">18 or younger</option>
+                            <option value="b">Older than 18</option>
+                        </select><br/>
+                        <br/>
+                        <textarea rows="5" cols="30">Do you have any additional comments</textarea><br/>
+                        <br/>
+                        <input type="reset" value="Clear Form"/><br/>
+                        <br/>
+                        <input type="button" value="Calculate Cost" onclick="totalCost();"/><br/>
+                        <br/>
+                        <label for="total">Total cost</label>
+                        <input type="text" id="total" name="total" size="6"/>
+                    </td>
+                    <td>
+                        <img src="images/Fish.jpg"/>
+                    </td>
+                    <td>
+                        <p>Choose your dish</p>
+                        <table id="dish-table">
+                            <tr>
+                                <td>
+                                    <input type="radio" id="salmon" name="fish"/>
+                                    <label for="salmon">Salmon</label><br/>
+                                    <input type="radio" id="bass" name="fish"/>
+                                    <label for="bass">Bass</label><br/>
+                                    <input type="radio" id="carp" name="fish"/>
+                                    <label for="carp">Carp</label><br/>
+                                    <input type="radio" id="trout" name="fish"/>
+                                    <label for="trout">Trout</label><br/>
+                                </td>
+                                <td>
+                                    $15<br/>
+                                    $14<br/>
+                                    $19<br/>
+                                    $13<br/>
+                                </td>
+                            </tr>
+                        </table>
+                        <p>Add sides ($3.50 each)</p>
+                        <input type="checkbox" id="salad" name="ch_1"/>
+                        <label for="salad">Salad</label><br/>
+                        <input type="checkbox" id="chips" name="ch_2"/>
+                        <label for="chips">Chips</label><br/>
+                        <input type="checkbox" id="rice" name="ch_3"/>
+                        <label for="rice">Rice</label><br/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

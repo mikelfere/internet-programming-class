@@ -1,0 +1,28 @@
+body{
+    background-color: #00ffe6;
+    color: #b36262;
+}
+
+#hdr-1{
+    color: #00b50b;
+    font-family: Algerian;
+}
+
+#hdr-2{
+    color: red;
+    font-family: Chiller;
+}
+
+table{
+    border: 3px dashed #b36262;
+    width: 100%;
+}
+
+td{
+    border: 3px solid #b36262;
+    width: 50%;
+}
+
+p{
+    font-style: italic;
+}

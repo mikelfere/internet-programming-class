@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 3</title>
+        <link rel="stylesheet" href="style-lab3.css"/>
+        <script>
+            let date=prompt("What is today's date?");
+        </script>
+    </head>
+    <body>
+        <p id="para-1">The body background color is #fde0ac and this paragraph<br/>is aligned right with a border style of dashed and font<br/>Century and background color of yellow and text black</p>
+        <script>
+            document.write("<h2>" + date + "</h2>");
+        </script>
+        <h4>This is header 4<br/>Font is Algerian<br/>text color is #43b7ba</h4>
+        <form>
+            <table>
+                <tr>
+                    <td> 
+                        <ol type="a">
+                            Ordered list
+                            <li>list-style-type: lower-alpha</li>
+                            <li>color: #f63526</li>
+                            <li>background-color: #99f3ff</li>
+                            <li>border-style: dotted</li>
+                            <li>border-color: brown</li>                                
+                            <li>font-size: 20px</li>
+                        </ol>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name"/>
+                    </td>
+                    <td>
+                        <p>Click on Mr. Magoo to go to comics.azcentral.com</p>
+                        <a href="https://comics.azcentral.com"><img src="images/mrmagoo.jpg"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea rows="4" cols="25">Comments (4 rows and 25 columns)</textarea>
+                        <p>College level:</p>
+                        <input type="radio" id="cllg1" name="cllg"/>
+                        <label for="cllg">First Year</label><br/>
+                        <input type="radio" id="cllg2" name="cllg"/>
+                        <label for="cllg">Sophomore</label><br/>
+                        <input type="radio" id="cllg3" name="cllg"/>
+                        <label for="cllg">Junior</label><br/>
+                        <input type="radio" id="cllg4" name="cllg"/>
+                        <label for="cllg">Senior</label><br/>
+                    </td>
+                    <td>
+                        <p>Choose the date: (There are three dates<br/>Their colors are brown and font is comic sans ms.)</p>
+                        <select name="date" id="dates">
+                            <option value="a">April 1, 2024</option>
+                            <option value="b">May 1, 2024</option>
+                            <option value="c">June 1, 2024</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

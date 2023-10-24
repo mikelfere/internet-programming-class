@@ -1,0 +1,42 @@
+body{
+    background-color: #fde0ac;
+}
+
+#para-1{
+    text-align: right;
+    border: 3px dashed;
+    font-family: Century;
+    background-color: yellow;
+    color: black;
+}
+
+h4{
+    font-family: Algerian;
+    text-align: center;
+    color: #43b7ba;
+}
+
+ol{
+    color: #f63526;
+    background-color: #99f3ff;
+    border: brown dotted;
+    font-size: 20px;
+}
+
+select{
+    color: brown;
+    font-family: "Comic Sans ms";
+}
+
+table, tr{
+    width: 100%
+}
+
+td{
+    width: 50%;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}

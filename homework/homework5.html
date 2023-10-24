@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Scores</title>
+        <link rel="stylesheet" href="homework5-style.css"/>
+        <script src="homework5-script.js"></script>
+    </head>
+    <body>
+        <form name="form1">
+            <table>
+                <tr>
+                    <td id="names-td">
+                        <h2>Names</h2>
+                        <input type="text" id="std-1" name="std_1"/>
+                        <label for="std-1">First Student</label><br/>
+                        <br/>
+                        <input type="text" id="std-2" name="std_2"/>
+                        <label for="std-2">Second Student</label><br/>
+                        <br/>
+                        <input type="text" id="std-3" name="std_3"/>
+                        <label for="std-3">Third Student</label><br/>
+                        <br/>
+                        <input type="text" id="std-4" name="std_4"/>
+                        <label for="std-4">Fourth Student</label><br/>
+                        <br/>
+                        <input type="button" value="Calculate Grades" onclick="calcGrade();"/>
+                    </td>
+                    <td>
+                        <h2>Test Score</h2>
+                        <input type="text" id="scr-1" name="scr_1" size="3"/>
+                        <label for="scr-1">Score for First Student</label><br/>
+                        <br/>
+                        <input type="text" id="scr-2" name="scr_2" size="3"/>
+                        <label for="scr-2">Score for Second Student</label><br/>
+                        <br/>
+                        <input type="text" id="scr-3" name="scr_3" size="3"/>
+                        <label for="scr-3">Score for Third Student</label><br/>
+                        <br/>
+                        <input type="text" id="scr-4" name="scr_4" size="3"/>
+                        <label for="scr-4">Score for Fourth Student</label><br/>
+                        <br/>
+                    </td>
+                    <td>
+                        <h2>Calculated Letter Grade</h2>
+                        <input type="text" id="grd-1" name="grd_1" size="2"/>
+                        <label for="grd-1">Calculated grade for First Student</label><br/>
+                        <br/>
+                        <input type="text" id="grd-2" name="grd_2" size="2"/>
+                        <label for="grd-2">Calculated grade for Second Student</label><br/>
+                        <br/>
+                        <input type="text" id="grd-3" name="grd_3" size="2"/>
+                        <label for="grd-3">Calculated grade for Third Student</label><br/>
+                        <br/>
+                        <input type="text" id="grd-4" name="grd_4" size="2"/>
+                        <label for="grd-4">Calculated grade for Fourth Student</label><br/>
+                        <br/>
+                    </td>
+                </tr>
+            </table>
+            <h3>The Average score for all the students is:</h3>
+            <input type="text" id="avg" name="avg"/><br/>
+            <input type="reset" value="clear">
+        </form>
+    </body>
+</html>

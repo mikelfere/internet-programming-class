@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sort Names and Expenses</title>
+        <link rel="stylesheet" href="style-lab6.css"/>
+        <script src="script-lab6.js"></script>
+    </head>
+    <body>
+        <table id="main-table">
+            <tr>
+                <td class="main-table-td">
+                    <form id="form-1">
+                        <h2>Fill in Student Names</h2>
+                        <p>Last Names:</p>
+                        <label for="std-1">Student 1:</label>
+                        <input type="text" id="std-1" name="std_1"/><br/>
+                        <br/>
+                        <label for="std-2">Student 2:</label>
+                        <input type="text" id="std-2" name="std_2"/><br/>
+                        <br/>
+                        <label for="std-3">Student 3:</label>
+                        <input type="text" id="std-3" name="std_3"/><br/>
+                        <br/>
+                        <label for="std-4">Student 4:</label>
+                        <input type="text" id="std-4" name="std_4"/><br/>
+                        <br/>
+                        <label for="std-5">Student 5:</label>
+                        <input type="text" id="std-5" name="std_5"/><br/>
+                        <br/>
+                        <input type="button" value="Sort Names" onclick="nameSort();"/>
+                        <p id="name-sort"></p>
+                        <input type="button" value="Clear Names" onclick="nameClear();"/>
+                    </form>
+                </td>
+                <td class="main-table-td">
+                    <form id="form-2">
+                        <h2>Fill in Your Expenses</h2>
+                        <p>Days:</p>
+                        <table id="day-table">
+                            <tr>
+                                <td>
+                                    <label for="d-1">Monday:</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="d-1" name="d_1" size="6"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="d-2">Tuesday:</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="d-2" name="d_2" size="6"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="d-3">Wednesday:</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="d-3" name="d_3" size="6"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="d-4">Thursday:</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="d-4" name="d_4" size="6"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="d-5">Friday:</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="d-5" name="d_5" size="6"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>    
+                                    <label for="d-6">Weekend:</label>
+                                </td>
+                                <td>   
+                                    <input type="text" id="d-6" name="d_6" size="6"/>
+                                </td>
+                            </tr>
+                        </table>
+                        <br/>
+                        <input type="button" value="Sort Expenses" onclick="expenseSort();"/>
+                        <p id="expense-sort"></p>
+                        <p id="smallest-val"></p>
+                        <p id="largest-val"></p>
+                        <input type="button" value="Clear Expenses" onclick="expenseClear();"/>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

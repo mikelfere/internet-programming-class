@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pizza Shop</title>
+        <link rel="stylesheet" href="pizzashop-style.css"/>
+        <script src="pizzashop-script.js"></script>
+    </head>
+    <body>
+        <h1>Mikel's Pizza Joint</h1>
+        <form name="form1">
+            <table>
+                <tr>
+                    <td>
+                        <p>What size Pizza</p>
+                        <input type="radio" id="small" name="size"/>
+                        <label for="small">Small ($12.00)</label><br/>
+                        <input type="radio" id="medium" name="size"/>
+                        <label for="medium">Medium ($14.00)</label><br/>
+                        <input type="radio" id="large" name="size"/>
+                        <label for="large">Large ($16.00)</label><br/>
+                    </td>
+                    <td class="center">
+                        Select Toppings (each $1.50)
+                        <ul>
+                            <li>
+                                <label for="onion">Onions</label>
+                                <input type="checkbox" id="onion" name="ch-1"/>
+                            </li>
+                            <li>
+                                <label for="pepper">Peppers</label>
+                                <input type="checkbox" id="pepper" name="ch-2"/>
+                            </li>
+                            <li>
+                                <label for="olive">Olives</label>
+                                <input type="checkbox" id="olive" name="ch-3"/>
+                            </li>
+                            <li>
+                                <label for="sausage">Sausage</label>
+                                <input type="checkbox" id="sausage" name="ch-4"/>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        SPECIAL INSTRUCTIONS<br/>
+                        <textarea id="spc" name="spc" rows="6" cols="20">enter any special instructions</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="Calculate Cost" onclick="doOrder();"/> 
+                        <!-- calls the function with that name when button is clicked -->
+                    </td>
+                    <td class="center">
+                        Your total cost is: $
+                        <input type="text" id="total" name="total">
+                    </td>
+                    <td>
+                        <p>Thank you for shopping at Mikel's</p>
+                        <input type="reset" value="Clear order"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

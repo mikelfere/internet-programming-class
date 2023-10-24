@@ -1,0 +1,11 @@
+#main-table{
+    border: 1px solid grey;
+    width: 100%;
+}
+
+.main-table-td{
+    border: 1px solid grey;
+    vertical-align: top;
+    width: 50%;
+}
+
