@@ -11,8 +11,8 @@ function nameSort(){
             return;
         }
     }
-        names.sort();
-        document.getElementById("name-sort").innerHTML = names;
+    names.sort();
+    document.getElementById("name-sort").innerHTML = names;
 }
 
 function expenseSort(){
