@@ -16,9 +16,25 @@ function outputCartRow(item, total){
     );
 }
 
+function subTotal(){
+    let subTot = 0;
+    for(element of cart){
+       subTot += calculateTotal(element.quantity, element.product.price);
+    }
+    return subTot;
+ }
 
+ function tax(){
+    return tax_rate*subTotal();
+ }
 
-
-
-
+ function shipping(){
+    if(subTotal() > shipping_threshold){
+       return 0;
+    }
+    return 40;
+ }
         
+ function total(){
+    return (subTotal() + shipping() + tax());
+ }
