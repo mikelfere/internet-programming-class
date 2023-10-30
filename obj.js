@@ -16,3 +16,10 @@ const anotherObj = {
 };
 
 console.log(anotherObj.action());
+
+const vehicle = {
+    wheels: 4, 
+    engine: function(){
+        return "Vroom!";
+    }
+};
