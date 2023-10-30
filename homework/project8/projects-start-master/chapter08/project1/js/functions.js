@@ -10,8 +10,8 @@ function outputCartRow(item, total){
             "<td><img src=\"" + item.product.filename + "\"></td>" +
             "<td>" + item.product.title + "</td>" +
             "<td>" + item.quantity + "</td>" +
-            "<td>" + item.product.price + "</td>" +
-            "<td>" + (item.product.price * item.quantity) + "</td>" +
+            "<td>" + item.product.price.toFixed(2) + "</td>" +
+            "<td>" + (item.product.price * item.quantity).toFixed(2) + "</td>" +
         "</tr>"
     );
 }
