@@ -11,7 +11,7 @@ const anotherObj = {
         afternoon: "tea"
     },
     action: function(){
-        return "Hello World";
+        return `time for ${this.beverage.morning}`; //string template
     }
 };
 
