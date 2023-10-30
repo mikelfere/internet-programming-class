@@ -9,7 +9,10 @@ const anotherObj = {
     beverage: {
         morning: "coffee",
         afternoon: "tea"
+    },
+    action: function(){
+        return "Hello World";
     }
 };
 
-console.log(second);
+console.log(anotherObj.action());
