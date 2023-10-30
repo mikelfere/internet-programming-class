@@ -4,3 +4,7 @@ const shipping_threshold = prompt('Enter shipping threshold (1000)');
 
 /* add loop and other code here ... in this simple exercise we are not
    going to concern ourselves with minimizing globals, etc */
+
+for(let element of cart){
+   outputCartRow(element, calculateTotal(element.quantity, element.product.price));
+}
