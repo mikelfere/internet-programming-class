@@ -1,0 +1,22 @@
+body{
+    background-color: orange;
+    font-family: Chiller;
+    font-size: 25px;
+}
+
+table{
+    width: 100%;
+}
+
+#main-td{
+    width: 70%;
+}
+
+img{
+    width: 300px;   
+}
+
+#arr-dis, #med-dis{
+    font-family: Georgia;
+    color: white;
+}

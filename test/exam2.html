@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exam 2</title>
+        <link rel="stylesheet" href="exam2.css"/>
+        <script src="exam2.js"></script>
+    </head>
+    <body>
+        <h1>Fall 2023 - Internet Programming</h1>
+        <table>
+            <tr>
+                <td id="main-td">
+                    <form id="form1">
+                        <p>Enter your expenses one at a time and click the add button with each expense</p>
+                        <label for="exp">Expense</label>
+                        <input type="text" name="exp" id="exp" size="8"/>
+                        <input type="button" value="ADD" onclick="addArr();"/>
+                        <input type="button" value="DISPLAY DATA" onclick="displayData();"/><br/>
+                        <p id="err-dis"></p>
+                        <input type="button" value="Clear" onclick="clearData();"/><br/>
+                        <p>The expenses you entered</p>
+                        <p id="arr-dis"></p>
+                        <p>The median of the expenses</p>
+                        <p id="med-dis"></p>
+                    </form>
+                </td>
+                <td>
+                    <img src="images/pumpkin.jpg"/>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
