@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>onclick example</title>
+        <style>
+            #box{
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box"></div>
+        <script>
+            const boxDiv = document.getElementById("box");
+            //boxDiv.addEventListener("mouseover", function(e){alert("Hey there")});
+            boxDiv.addEventListener("click", function(e){console.log(this);});
+            boxDiv.addEventListener("click", e=>{console.log(this);});
+        </script>
+    </body>
+</html>
