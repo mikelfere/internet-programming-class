@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events Lab</title>
+        <link href="style-lab7.css" rel="stylesheet"/>
+        <script src="script-lab7.js"></script>
+    </head>
+    <body>
+        <h4>Internet Programming 1</h4>
+        <table id="main-table">
+            <tr>
+                <td>
+                    <div id="box-1" class="box">
+                        Click on box
+                    </div>
+                </td>
+                <td>
+                    <div id="box-2" class="box">
+                        Move mouse over to see picture
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="box-3" class="box">
+                        Double click to remove box
+                    </div>
+                </td>
+                <td>
+                    <div id="box-4" class="box">
+                        Click to restore page
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <script >
+            const box1 = document.getElementById("box-1");
+            const box2 = document.getElementById("box-2");
+            const box3 = document.getElementById("box-3");
+            const box4 = document.getElementById("box-4");
+            box1.addEventListener("click", ()=>{changeColor(box1);});
+            box2.addEventListener("mouseover", () => {placePicture(box2);});
+            box3.addEventListener("dblclick", () => {removeBox(box3);});
+            box4.addEventListener("click", () => {resetAll(box4);});
+        </script>
+    </body>
+</html>

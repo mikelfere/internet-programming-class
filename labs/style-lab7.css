@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+h4{
+    text-align: center;
+}
+
+#main-table{
+    width: 100%;
+}
+
+#main-table td{
+    width: 50%;
+}
+
+div{
+    background-color: darkmagenta;
+    font-size: small;
+    text-align: center;
+    width: 15em;
+    height: 15em;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+}
