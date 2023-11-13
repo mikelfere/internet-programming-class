@@ -1,0 +1,115 @@
+body{
+    color: white;
+    font-family: Calibri;
+}
+
+#end-div{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: black;
+    z-index: 0;
+    background-image: none;
+    animation-name: none;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#end{
+    display: block;
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: auto;
+    font-size: 2em;
+}
+
+#clear-div{
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -4;
+}
+
+#clear{
+    font-size: medium;
+    font-family: Brush Script MT, cursive;
+}
+
+#answer-div{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    opacity: 0.7;
+    border-radius: 2em;
+    z-index: -6;
+    animation-name: none;
+    animation-fill-mode: forwards;
+}
+
+#answer{
+    text-align: center;
+    display: block;
+    margin: 1em;
+}
+
+#instruct-div{
+    width: fit-content;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -4;
+}
+
+#img{
+    width: 10%;
+    position: absolute;
+    /* To center the image in the screen using absolute positioning */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -3; /*-3*/
+    animation-name: none;
+    animation-duration: 2s;
+    /* To keep the last frame of the animation in display */
+    animation-fill-mode: forwards;
+}
+
+@keyframes anim {
+    from{
+        width:10%;
+        z-index: -3;
+    }
+    to{
+        z-index: -4;
+        width: 30%;
+    }
+}
+
+@keyframes grad {
+    from{
+        background-image: none;
+        z-index: 0;
+    }
+    to{
+        background-image: radial-gradient(blue 35%, red);
+        z-index: -5;
+    }
+}
+
+@keyframes ansr {
+    from{
+        z-index: -6;
+    }
+    to{
+        z-index: -4;
+    }
+}
