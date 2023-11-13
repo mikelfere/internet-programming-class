@@ -1,6 +1,6 @@
 let questions = [
     "what is the best programming language",
-    "how many years are in a millenia",
+    "how many years are in a millennia",
     "will it be warm tomorrow",
     "how to learn programming",
     "who will win the next world cup in football"
