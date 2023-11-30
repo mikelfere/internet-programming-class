@@ -1,0 +1,18 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+table label{
+    text-transform: uppercase;
+}
+
+table{
+    border: 3px solid white;
+}
+
+h1{
+    text-align: center;
+    color: darkmagenta;
+    background-color: white;
+}
