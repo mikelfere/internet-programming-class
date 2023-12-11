@@ -83,9 +83,8 @@
                     }else{
                         $factorial = 1;
                         $temp = $num;
-                        while($temp > 1){
-                            $factorial *= $temp;
-                            $temp--;
+                        for($i = $num; $i > 1; $i--){
+                            $factorial *= $i;
                         }
                         echo("The factorial of ". $num. " is ". $factorial);
                     }
